@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:lex="http://wpflocalizeextension.codeplex.com"
+        lex:LocalizeDictionary.DesignCulture="en"
+        lex:ResxLocalizationProvider.DefaultAssembly="WpfApplication1"
+        lex:ResxLocalizationProvider.DefaultDictionary="Mainscreen"
+        Title="{lex:Loc Key=WindowTitle}" Height="461" Width="525" Background="Black" Foreground="White" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="{lex:Loc Key=AlbumLabel}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" />
+        <StackPanel HorizontalAlignment="Left" Height="187" Margin="10,67,0,0" VerticalAlignment="Top" Width="250" Background="#FF3E3E3E">
+            <Image Source="img/IMG_2365.jpg"/>
+            <TextBlock x:Name="Pic1" TextWrapping="Wrap" Text="St. Francis Xavier Cathedral" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <Button x:Name="togglelang" Content="English" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="{lex:Loc Key=ButtonDelete}" HorizontalAlignment="Left" Margin="185,67,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
