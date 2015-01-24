@@ -82,10 +82,12 @@ namespace WpfApplication1
 
         public string GetUIString(string key)
         {
-            string uiString;
-            LocTextExtension locExtension = new LocTextExtension(key);
-            locExtension.ResolveLocalizedValue(out uiString);
-            return uiString;
+        //    string uiString;
+        //    LocTextExtension locExtension = new LocTextExtension(key);
+        //    locExtension.ResolveLocalizedValue(out uiString);
+        //    return uiString;
+
+            return LocExtension.GetLocalizedValue<string>("WpfApplication1:Mainscreen:" + key);
         }
     }
 }
